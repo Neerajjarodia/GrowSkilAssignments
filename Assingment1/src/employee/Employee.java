@@ -1,0 +1,50 @@
+package employee;
+//Q1. Employee Management using this and static
+public class Employee {
+
+	// TODO Auto-generated method stub
+		 // Instance variables
+	    int empId;
+	    String name;
+	    double salary;
+
+	    // Static variable
+	    static String companyName = "ABC Technologies";
+
+	    // Constructor using this keyword
+	    Employee(int empId, String name, double salary) {
+	        this.empId = empId;
+	        this.name = name;
+	        this.salary = salary;
+	    }
+
+	    // Static method
+	    static void displayCompany() {
+	        System.out.println("Company Name : " + companyName);
+	        System.out.println();
+	    }
+
+	    // Instance method
+	    void displayEmployee() {
+	        System.out.println("Employee Details");
+	        System.out.println("----------------");
+	        System.out.println("Employee ID : " + empId);
+	        System.out.println("Name        : " + name);
+	        System.out.println("Salary      : " + salary);
+	        System.out.println();
+	    }
+
+	    public static void main(String[] args) {
+
+	        Employee.displayCompany();
+
+	        Employee e1 = new Employee(101, "Priya", 50000.0);
+	        Employee e2 = new Employee(102, "Rahul", 62000.0);
+	        Employee e3 = new Employee(103, "Anjali", 58000.0);
+
+	        e1.displayEmployee();
+	        e2.displayEmployee();
+	        e3.displayEmployee();
+	}
+
+}

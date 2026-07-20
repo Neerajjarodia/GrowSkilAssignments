@@ -1,0 +1,24 @@
+package ProgramsString;
+
+public class ProgramsStringMethodChar {
+
+	public static void main(String[] args) {
+		String str= "hello world java";
+		System.out.println(str.charAt(0));
+		System.out.println(str.indexOf('h'));
+		System.out.println(str.isEmpty());
+		System.out.println(str.length());
+		System.out.println(str.replace(' ','-'));
+		System.out.println(str.substring(1,3));
+		System.out.println(str.toLowerCase());
+		
+		
+		String str1 ="----------------------hello=--------------------";
+		System.out.println(str.trim());
+		
+		String str2 = "hello world java";
+		String []words= str2.split("-");
+		String.println(words[1]);
+	}
+
+}

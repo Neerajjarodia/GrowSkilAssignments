@@ -1,0 +1,20 @@
+package statements;
+
+public class LargestDigit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int number = 59371;
+	        int largest = 0;
+
+	        while (number > 0) {
+	            int digit = number % 10;
+
+	            if (digit > largest) {
+	                largest = digit;
+	            }
+	            number = number / 10;
+	        }
+	        System.out.println("Largest Digit = " + largest);
+	}
+}
